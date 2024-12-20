@@ -51,14 +51,6 @@ footer {
     position: relative; /* フッターをページの下に移動 */
 }
 
-#gameOfLifeCanvas {
-    width: 100%;
-    height: 200px;
-    display: block;
-    background-color: #000;
-    border: 1px solid #ccc;
-}
-
 #typingHeader {
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
