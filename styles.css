@@ -56,3 +56,16 @@ footer {
     font-family: 'Courier New', Courier, monospace;
 }
 
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em 0;
+    }
+    nav ul li {
+        display: block; margin: 5px 0;
+    } 
+    section { padding: 1em;
+    }
+    #typingHeader {
+        font-size: 1.5em;
+    }
+}
