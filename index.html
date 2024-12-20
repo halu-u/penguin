@@ -36,14 +36,14 @@
         </div>
         <div class="project">
             <h3>Modeling with Blender</h3>
-            <p>I world like to create a world in VRChat about the death of people and things that are invisible in everyday life.<br>
+            <p>I would like to create a world in VRChat about the death of people and things that are invisible in everyday life.<br>
                 but it's going to be a long road as I can't make animations and textures right yet.
             </p>
         </div>
         <div class="project">
             <h3>OS Development</h3>
             <p>This is just a hobby for me.<br>
-                Right now, it only runs on QEMU, and since it is a 32-bit architecture, itis not practical, and that is where I would like to improve.<br>
+                Right now, it only runs on QEMU, and since it is a 32-bit architecture, it is not practical, and that is where I would like to improve.<br>
                 Even if I understood, it probably feel a sense of emptiness, wondering what I had learned the hard way...
             </p>
         </div>
@@ -51,11 +51,29 @@
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>If you have any questions, feel free to email me at <a href="mail to: nakajima.ctf@gmail.com">nakajima.ctf@gmail.com</a></p>
+        <p>If you have any questions, feel free to email me at <a href="mailto:nakajima.ctf@gmail.com">nakajima.ctf@gmail.com</a></p>
     </section>
     <footer>
         <p>&copy; 2024 Ren. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Typing animation
+        const typedText = document.getElementById('typingHeader');
+        const text = "I wonder what the title should be...";
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                typedText.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(type, 100);
+            }
+        }
+
+        type();
+    });
+    </script>
 </body>
 </html>
+
