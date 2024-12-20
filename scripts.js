@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function gameLoop() {
         drawGrid();
         updateGrid();
-        requestAnimationFrame(gameLoop);
     }
 
-    gameLoop();
+    // 200ミリ秒ごとにgameLoop関数を呼び出します
+    setInterval(gameLoop, 500);
 });
