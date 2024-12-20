@@ -47,7 +47,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-top: 2em; /* フッターの上にスペースを追加 */
+    position: relative; /* フッターをページの下に移動 */
 }
+
