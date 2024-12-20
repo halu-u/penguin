@@ -75,5 +75,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 200ミリ秒ごとにgameLoop関数を呼び出します
-    setInterval(gameLoop, 200);
+    setInterval(gameLoop, 300);
 });
