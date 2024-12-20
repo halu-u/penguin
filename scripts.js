@@ -3,6 +3,11 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     alert('Message sent!');
 });
 
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Message sent!');
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('gameOfLifeCanvas');
     const ctx = canvas.getContext('2d');
@@ -70,5 +75,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 200ミリ秒ごとにgameLoop関数を呼び出します
-    setInterval(gameLoop, 500);
+    setInterval(gameLoop, 200);
 });
